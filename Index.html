@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Assignment#02</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Friendship survey form </h1>
+
+            <p id="description">please share your information to help us with this survey.</p>
+        </header>
+        <main>
+            <div class="container">
+            <form id="survey-form" action="confirmation.html" method="GET">
+                <div>
+                   <label for="name">Name:</label>
+                   <input type="text" id="name" placeholder="Ali" name="name" 
+                   required minlength="3"/>
+                </div>
+                <div>
+                   <label for="email">Email Address:</label>
+                   <input type="email" id="email" name="email" 
+                   placeholder="shereennazari09@mail.com" required/>
+                </div>
+                <div>
+                   <label for="number">Age:</label>
+                   <input type="number" id="number" name="age" required/>
+                </div>
+                
+                <div>
+                    <label>How do you make friends?</label>
+                
+                    <input type="checkbox" id="join-a-club" name="making-friends-method"/>
+                    <label class="inline-label" for="join-a-club">Join a club</label>
+
+                    <input type="checkbox" id="take-a-class" name="making-friends-method"/>
+                    <label class="inline-label" for="take-a-class">Take a class</label>
+            
+                    <input type="checkbox" id="starting-conversation" name="making-friend-method"/>
+                    <label class="inline-label" for="starting-conversation">Starting conversation</label>
+
+                    <input type="checkbox" id="volunteering" name="making-friend-method"/>
+                    <label class="inline-label" for="volunteering">Volunteering</label>
+
+                    <input type="checkbox" id="make-friends-online" name="making-friend-method"/>
+                    <label class="inline-label" for="make-friends-online">Make friends online</label>
+                </div>
+                
+                <div>
+                    <label for="types-of-friends">What types of friends do you have more?</label>
+                         <select id="types-of-friends">
+                               <option class="friend's-types">Select One</option>
+                               <option class="friend's-types">Acquaintances</option>
+                               <option class="friend's-types">Work friends</option>
+                               <option class="friend's-types">Casual friends</option>
+                               <option class="friend's-types">Close friends</option>
+                               <option class="friend's-types">The one you take care of</option>
+                               <option class="friend's-types">Best friends</option>
+                               <option class="friend's-types">Lifetime friends</option>
+                         </select>
+                      </div>
+                      
+                      <div>
+                         <label>In your opinion, what kinds of friends are the best?</label>
+                
+                         <input type="radio" id="the-listener" name="the-best-friend"/>
+                         <label class="inline-label" for="the-listener">The listener</label>
+
+                         <input type="radio" id="the-cheerleader" name="the-best-friend"/>
+                         <label class="inline-label" for="the-cheerleader">The cheerleader</label>
+                
+                         <input type="radio" id="the-wise-friend" name="the-best-friend"/>
+                         <label class="inline-label" for="the-wise-friend">The wise</label>
+
+                         <input type="radio" id="the-twin" name="the-best-friend"/>
+                         <label class="inline-label" for="the-twin">The twin</label>
+
+                         <input type="radio" id="the-opposite-friend" name="the-best-friend"/>
+                         <label class="inline-label" for="the-opposite-friend">The opposite</label>
+                     </div>
+                     
+                     <div>
+                         <label for="com">Leave Comments:</label>
+                         <textarea id="com"></textarea>
+                     </div>
+                     
+                     <div>
+                         <button type="submit">Submit</button>
+                         <button type="reset">Reset</button>
+                     </div>  
+                </form>
+            </div>
+        </main>
+    </body>
+</html>
